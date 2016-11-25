@@ -19,5 +19,10 @@ import jqjs from 'jqjs'
 
 const data = [{ a: 60, b: 'world' }, { a: 15, b: 'BAD' }, { a: 42, b: 'hello' }];
 const selector = 'map(select(.a > 40)) | sort_by(.a) | map(.b) | join(" ")';
-console.log(jqjs(selector).exec(data));
+console.log(jqjs(selector).first(data));
 ```
+
+---
+Features delayed:
+> **? token**: does not output even an error
+
