@@ -1,0 +1,27 @@
+{
+  "name": "jqjs",
+  "version": "0.0.1",
+  "description": "A pure javascript implementation of stedolan jq project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/np42/jqjs.git"
+  },
+  "keywords": [
+    "json",
+    "js",
+    "jq",
+    "selector",
+    "traversal",
+    "mapping"
+  ],
+  "author": "Nicolas Pelletier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/np42/jqjs/issues"
+  },
+  "homepage": "https://github.com/np42/jqjs#readme"
+}
