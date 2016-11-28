@@ -15,14 +15,19 @@ See full documentation [here](https://stedolan.github.io/jq/manual/#Basicfilters
 $> npm install jqjs
 ```
 ```javascript
-import jqjs from 'jqjs'
+import jq from 'jqjs';
 
 const data = [{ a: 60, b: 'world' }, { a: 15, b: 'BAD' }, { a: 42, b: 'hello' }];
 const selector = 'map(select(.a > 40)) | sort_by(.a) | map(.b) | join(" ")';
-console.log(jqjs(selector).first(data));
+console.log(jq(selector).first(data));
 ```
 
 ---
 Features delayed:
 > **? token**: does not output even an error
 
+TODO:
+> Replace var keyword by let when es6 transpilation implemented
+> Use Yolo.serialize instread of JSON.serialize
+> Check for missing natives function (like Object.keys, JSON.parse, ...)
+> Optimize selector parsing (quite slow)
