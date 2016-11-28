@@ -27,8 +27,6 @@ console.log(jq(selector).first(data));
 
 ## List of builtins
 
-<a><img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ij48dGV4dCBmb250LXNpemU9IjE2IiB4PSIyIiB5PSIxMSI+PHRzcGFuIGZpbGw9ImdyZWVuIj4mI3gyNzEzOzwvdHNwYW4+PC90ZXh0Pjwvc3ZnPg==" /></a>
-
 | Function Name  | Implemented | Tested |
 |----------------|:-----------:|:------:|
 | Operator //    | ✘           | ✘      |
