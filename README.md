@@ -3,9 +3,7 @@ jqjs
 
 jqjs is a pure javascript JSON processor based on the awesome [stedolan/jq](https://github.com/stedolan/jq) work.
 
-It's currently in dev and fully usable now, but I'm working on !
-
-Watch this project to be notified for new features
+The JQJS project stopped at this point, use [jmespath](http://jmespath.org/specification.html) instead or fork it to implement missing builtins.
 
 ---
 
@@ -13,9 +11,17 @@ See full documentation [here](https://stedolan.github.io/jq/manual/#Basicfilters
 
 ---
 
+## Installation
 ```shell-script
-$> npm install jqjs
+$> git clone https://github.com/np42/jqjs
 ```
+
+## Development build
+```shell-script
+$> node build.js # create a ./dist/jq.js file
+```
+
+## Usage
 ```javascript
 import jq from 'jqjs';
 
@@ -23,6 +29,7 @@ const data = [{ a: 60, b: 'world' }, { a: 15, b: 'BAD' }, { a: 42, b: 'hello' }]
 const selector = 'map(select(.a > 40)) | sort_by(.a) | map(.b) | join(" ")';
 console.log(jq(selector).first(data));
 ```
+
 ---
 
 ## List of builtins
