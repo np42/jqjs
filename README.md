@@ -24,10 +24,10 @@ console.log(jq(selector).first(data));
 
 ---
 Features delayed:
-> **? token**: does not output even an error
+* **? token**: does not output even an error
 
 TODO:
-> Replace var keyword by let when es6 transpilation implemented
-> Use Yolo.serialize instread of JSON.serialize
-> Check for missing natives function (like Object.keys, JSON.parse, ...)
-> Optimize selector parsing (quite slow)
+* Replace var keyword by let when es6 transpilation implemented
+* Use Yolo.serialize instread of JSON.serialize
+* Check for missing natives function (like Object.keys, JSON.parse, ...)
+* Optimize selector parsing (quite slow)
